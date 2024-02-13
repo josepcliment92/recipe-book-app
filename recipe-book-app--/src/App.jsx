@@ -1,8 +1,12 @@
 import './App.css'
+import Homepage from './homepage'
 
 function App() {
 
-  return
+  return (
+<Homepage />
+
+  )
 }
 
 export default App
