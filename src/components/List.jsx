@@ -24,7 +24,7 @@ const [currentListRecipe, setCurrentListRecipe] = useState(props.data);
           <div key={index}>
             <ListItem data={eachRecipe} />
             <button onClick={() => handleRemoveRecipe(index)}>Borrar</button>
-            <Link to={"/item-details"}>
+            <Link to={`/item-details/${eachRecipe.id}`}>
             <button>Detalles</button>
             </Link>
           </div>

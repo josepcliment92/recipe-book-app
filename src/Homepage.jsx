@@ -18,7 +18,7 @@ function Homepage() {
       <div>
         <Routes>
           <Route path={"/"} element={<DashboardPage />} />
-          <Route path={"/item-details"} element={<ItemDetailsPage />} />
+          <Route path={"/item-details/:recipeId"} element={<ItemDetailsPage />} />
           <Route path={"/about"} element={<AboutPage />} />
           <Route path={"*"} element={<NotFoundPage />} />
         </Routes>
