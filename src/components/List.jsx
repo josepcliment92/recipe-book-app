@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ListItem from "./ListItem";
+import { Link } from "react-router-dom";
 //import listRecipes from "./recipe-list.json"; 
 
 function List(props) {
@@ -22,6 +23,10 @@ const [currentListRecipe, setCurrentListRecipe] = useState(props.data);
         return (
           <div key={index}>
             <ListItem data={eachRecipe} />
+            <button onClick={() => handleRemoveRecipe(index)}>Borrar</button>
+            <Link to={"/item-details"}>
+            <button>Detalles</button>
+            </Link>
           </div>
         );
       })}
