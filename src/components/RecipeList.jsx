@@ -23,7 +23,7 @@ function RecipeList(props) {
           <div key={index}>
             <ListItem data={eachRecipe} />
             <button onClick={() => handleRemoveRecipe(index)}>Borrar</button>
-            <Link to={`/item-details/${eachRecipe.id}`}>
+            <Link to={`/item-details/${eachRecipe.name}`}>
             <button>Detalles</button>
             </Link>
           </div>
