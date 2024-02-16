@@ -1,8 +1,7 @@
 import { useState } from "react"
-import listRecipes from "./recipe-list.json";
 
-function Form() {
-    const [recipes, setRecipes] = useState(listRecipes)
+
+function Form(props) {
     const [nameInput, setNameInput] = useState("")
     const [caloriesInput, setCaloriesInput] = useState(0)
     const [imageInput, setImageInput] = useState("")
@@ -23,18 +22,18 @@ function Form() {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-
+//console.log("pasa algo")
         const newRecipe = {
-            id: Math.random()*100,
+            id: Math.floor(Math.random() * 1000000),
             name: nameInput,
             calories: caloriesInput,
             image: imageInput,
             servings: servingsInput,
         }
-
-        let clone = JSON.parse(JSON.stringify(recipes))
+//console.log(newRecipe)
+        let clone = JSON.parse(JSON.stringify(props.currentListRecipe))
         clone.unshift(newRecipe)
-        setRecipes(clone)
+        props.setCurrentListRecipe(clone)
     }
 
   
@@ -65,7 +64,8 @@ function Form() {
                     Raciones
                     <input name="servings" type="number" placeholder="0" value={servingsInput} onChange={handleServingsInput}/>
                 </label></div>
-                <button>Añade tu receta</button>
+                <button type="submit" >Añade tu receta</button>
+                
             </div>
         </form>
     </div>

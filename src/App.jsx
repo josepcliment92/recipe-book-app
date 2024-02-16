@@ -1,8 +1,34 @@
 import "./App.css";
-import Homepage from "./Homepage";
+import Footer from "./components/Footer.jsx";
+import Sidebar from "./components/Sidebar.jsx";
+import UpBarra from "./components/UpBarra.jsx";
+import { Routes, Route } from "react-router-dom";
+import { useState } from "react";
+import listRecipes from "./assets/recipe-list.json"; 
+import DashboardPage from "./pages/DashboardPage.jsx";
+import NotFoundPage from "./pages/NotFoundPage.jsx";
+import ItemDetailsPage from "./pages/ItemDetailsPage.jsx"; 
+import AboutPage from "./pages/AboutPage.jsx";
+//import RecipeList from "./components/RecipeList.jsx";
 
 function App() {
-  return <Homepage />;
+  const [currentListRecipe, setCurrentListRecipe] = useState(listRecipes);
+  
+  return (
+    <div>
+      <UpBarra />
+      <Sidebar />
+      <Footer />
+      <div>
+        <Routes>
+          <Route path={"/"} element={<DashboardPage currentListRecipe={currentListRecipe} setCurrentListRecipe={setCurrentListRecipe}/>} />
+          <Route path={"/item-details/:recipeId"} element={<ItemDetailsPage />} />
+          <Route path={"/about"} element={<AboutPage />} />
+          <Route path={"*"} element={<NotFoundPage />} />
+        </Routes>
+      </div>
+    </div>
+  );
 }
 
 export default App;

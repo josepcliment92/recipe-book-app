@@ -2,14 +2,14 @@ import RecipeList from "../components/RecipeList";
 import Form from "../components/Form";
 
 
-function DashboardPage() {
+function DashboardPage(props) {
   return (
     <div>
 
-      <Form /> 
+      <Form currentListRecipe={props.currentListRecipe} setCurrentListRecipe={props.setCurrentListRecipe}/> 
     
 
-      <RecipeList />
+      <RecipeList currentListRecipe={props.currentListRecipe} setCurrentListRecipe={props.setCurrentListRecipe}/>
 
     </div>
   );

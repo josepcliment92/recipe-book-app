@@ -1,11 +1,9 @@
-import listRecipes from "./recipe-list.json";
+
 import { useParams } from "react-router-dom";
 
 function ListItem(props) {
 
-  const recipeId = useParams();
-  const recipeDetail = listRecipes.find((eachRecipe) => eachRecipe.id == recipeId.recipeId ? true : false);
-
+  
   //return (
     // <div>
     //     <h3>Nombre: {recipeDetail.name}</h3>
