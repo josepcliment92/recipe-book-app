@@ -5,14 +5,17 @@ import { useParams } from "react-router-dom";
 function ItemDetailsPage(props) {
   
   const recipeId = useParams()
-  const recipeDetail = props.currentListRecipe.find((eachRecipe) => eachRecipe.name === recipeId.name ? true : false)
-  console.log(eachRecipe)
+  
+  const recipeDetail = props.currentListRecipe.find((eachRecipe) => eachRecipe.name == recipeId.recipeId ? true : false)
+  
   
     return (
+    
+    
     <div>
       <h2>{recipeDetail.name}</h2>
 
-      <div>{recipeDetail.image}</div>
+      <div> <img src={recipeDetail.image} width="500px" />   </div>
 
       <p>Esta receta contiene ${recipeDetail.calories} calorías</p>
 
@@ -24,3 +27,4 @@ function ItemDetailsPage(props) {
 export default ItemDetailsPage;
 
 //la información que manejamos aquí no va a venir del .json, la traeremos con prop drilling desde la App. studentsDetailsPage
+//{recipeDetail && (aquí dentro el div del return)}
