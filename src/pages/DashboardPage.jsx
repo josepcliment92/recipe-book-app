@@ -8,7 +8,7 @@ function DashboardPage(props) {
       <div className="add-form">
       <Form currentListRecipe={props.currentListRecipe} setCurrentListRecipe={props.setCurrentListRecipe}/> 
       </div>
-      <div>
+      <div >
       <RecipeList currentListRecipe={props.currentListRecipe} setCurrentListRecipe={props.setCurrentListRecipe}/>
       </div>
     </div>

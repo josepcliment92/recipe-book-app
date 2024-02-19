@@ -64,7 +64,7 @@ function Form(props) {
                     Raciones
                     <input name="servings" type="number" placeholder="0" value={servingsInput} onChange={handleServingsInput}/>
                 </label></div>
-                <button type="submit" >Añade tu receta</button>
+                <button className="btn-add-recipe" type="submit" >Añade tu receta</button>
                 
             </div>
         </form>

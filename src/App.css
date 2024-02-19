@@ -7,7 +7,7 @@
 
 .sidebar {
   display: flex;
-  background-color: beige;
+  background-color: rgb(206, 206, 162);
   position: relative;
   width: 200px;
   height: 100vh;
@@ -16,7 +16,7 @@
 }
 
 .home-page {
-  background-color: rgb(49, 83, 83);
+  background-color: rgb(163, 188, 113);
   width: 100vw;
   
 }
@@ -27,11 +27,83 @@
 
 .add-form {
   padding: 15px;
+  background-color: rgb(230, 211, 137);
+  margin: 20px 200px 20px 200px;
+  border-radius: 7px;
+}
+
+.btn-add-recipe{
+  background-color: rgb(54, 168, 71);
+  color:rgb(243, 245, 242);
+  box-shadow: 0 0 3px rgb(4, 6, 7) ;
+  border-radius: 5px;
 }
 
 .list-item {
-  border: 2px solid #649033 ;
+  border: 2px solid #649033;
   border-radius: 10px;
   margin: 0px 30px 20px 30px;
   padding-bottom: 20px;
+  padding-top: 20px;
+  
+}
+
+.upbarra{
+  display: flex;
+  background-color: #649033;
+  
+}
+
+.titulo-upbarra{
+  align-items: center;
+  width: 750px;
+  padding-top: 50px;
+  padding-left: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.logoimg1 {
+  margin-left: 100px;
+}
+.logoimg2 {
+  margin-right: 80px;
+}
+
+.btn-edite-recipe{
+  background-color: rgb(54, 168, 71);
+  color:rgb(243, 245, 242);
+  box-shadow: 0 0 3px rgb(4, 6, 7) ;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  
+}
+
+.btn-delete{
+  background-color: rgb(102, 109, 103);
+  color:rgb(243, 245, 242);
+  box-shadow: 0 0 3px rgb(4, 6, 7) ;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+.btn-details {
+  background-color: rgb(207, 155, 34);
+  color:rgb(243, 245, 242);
+  box-shadow: 0 0 3px rgb(4, 6, 7) ;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.edit-form{
+  padding: 15px;
+  background-color: rgb(230, 211, 137);
+  margin: 20px 300px 20px 300px;
+  border-radius: 7px;
+  border: 2px solid #649033 ;
+}
+
+.each-recipe{
+  padding-top: 30px;
 }

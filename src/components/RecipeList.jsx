@@ -22,9 +22,9 @@ function RecipeList(props) {
         return (
           <div className="list-item" key={index}>
             <ListItem data={eachRecipe} setCurrentListRecipe={props.setCurrentListRecipe} index={index} />
-            <button onClick={() => handleRemoveRecipe(index)}>Borrar</button>
+            <button className="btn-delete" onClick={() => handleRemoveRecipe(index)}>Borrar</button>
             <Link to={`/item-details/${eachRecipe.name}`}>
-            <button>Detalles</button>
+            <button className="btn-details">Detalles</button>
             </Link>
           </div>
         );

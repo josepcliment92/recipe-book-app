@@ -32,7 +32,7 @@ function UpdateForm(props) {
   };
 
   return (
-    <div>
+    <div className="edit-form">
       <form onSubmit={handleSubmit}>
         <div>
           <span>Aquí puedes editar tu receta</span>
@@ -69,7 +69,7 @@ function UpdateForm(props) {
               />
             </label>
           </div>
-          <button type="submit">¡Edita tu receta!</button>
+          <button className="btn-edite-recipe" type="submit">¡Edita tu receta!</button>
         </div>
       </form>
     </div>

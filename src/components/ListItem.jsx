@@ -22,7 +22,7 @@ function ListItem(props) {
         <img src={props.data.image} alt={props.data.name} width="80px" />
       </div>
       <p>Raciones: {props.data.servings}</p>
-      <button onClick={handleToggleEditForm}>
+      <button className="btn-edite-recipe" onClick={handleToggleEditForm}>
         Ver formulario Editar Receta
       </button>
 
