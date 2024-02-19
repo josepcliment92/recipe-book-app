@@ -1,12 +1,16 @@
-
+import { Link } from "react-router-dom";
 
 function Sidebar() {
   return (
-    <div>Sidebar
-<a href="">Home Page</a>
-<a href="">About Page</a>
+    <div>
+      <div>
+        <Link to="/">Home Page</Link>
+      </div>
+      <div>
+        <Link to="/about">About Page</Link>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Sidebar
+export default Sidebar;

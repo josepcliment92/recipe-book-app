@@ -31,6 +31,7 @@ function ListItem(props) {
           data={props.data}
           setCurrentListRecipe={props.setCurrentListRecipe}
           index={props.index}
+          setIsEditFormShowing={setIsEditFormShowing}
         />
       ) : null}
     </div>

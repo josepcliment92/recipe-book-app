@@ -27,6 +27,8 @@ function UpdateForm(props) {
       clone[props.index] = updatedRecipe;
       return clone;
     });
+
+    props.setIsEditFormShowing(false)
   };
 
   return (

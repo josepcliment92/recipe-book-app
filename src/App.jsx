@@ -16,33 +16,39 @@ function App() {
 
   return (
     <div>
-      <UpBarra />
-      <Sidebar />
-      <Footer />
-      <div>
-        <Routes>
-          <Route
-            path={"/"}
-            element={
-              <DashboardPage
-                currentListRecipe={currentListRecipe}
-                setCurrentListRecipe={setCurrentListRecipe}
-              />
-            }
-          />
-          <Route
-            path={"/item-details/:recipeId"}
-            element={
-              <ItemDetailsPage
-                currentListRecipe={currentListRecipe}
-                setCurrentListRecipe={setCurrentListRecipe}
-              />
-            }
-          />
-          <Route path={"/about"} element={<AboutPage />} />
-          <Route path={"*"} element={<NotFoundPage />} />
-        </Routes>
+      <div className="up-barra">
+        <UpBarra />
       </div>
+      <div className="cuerpo-pagina">
+        <div className="sidebar">
+          <Sidebar />
+        </div>
+        <div className="home-page">
+          <Routes>
+            <Route
+              path={"/"}
+              element={
+                <DashboardPage
+                  currentListRecipe={currentListRecipe}
+                  setCurrentListRecipe={setCurrentListRecipe}
+                />
+              }
+            />
+            <Route
+              path={"/item-details/:recipeId"}
+              element={
+                <ItemDetailsPage
+                  currentListRecipe={currentListRecipe}
+                  setCurrentListRecipe={setCurrentListRecipe}
+                />
+              }
+            />
+            <Route path={"/about"} element={<AboutPage />} />
+            <Route path={"*"} element={<NotFoundPage />} />
+          </Routes>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }
