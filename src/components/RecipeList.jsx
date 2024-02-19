@@ -21,7 +21,7 @@ function RecipeList(props) {
       {props.currentListRecipe.map((eachRecipe, index) => {
         return (
           <div key={index}>
-            <ListItem data={eachRecipe} />
+            <ListItem data={eachRecipe} setCurrentListRecipe={props.setCurrentListRecipe} index={index} />
             <button onClick={() => handleRemoveRecipe(index)}>Borrar</button>
             <Link to={`/item-details/${eachRecipe.name}`}>
             <button>Detalles</button>
