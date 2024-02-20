@@ -1,10 +1,14 @@
 import RecipeList from "../components/RecipeList";
 import Form from "../components/Form";
+import SearchBar from "../components/SearchBar";
 
 
 function DashboardPage(props) {
   return (
     <div>
+      <div>
+      <SearchBar currentListRecipe={props.currentListRecipe} setCurrentListRecipe={props.setCurrentListRecipe}/>
+      </div>
       <div className="add-form">
       <Form currentListRecipe={props.currentListRecipe} setCurrentListRecipe={props.setCurrentListRecipe}/> 
       </div>

@@ -4,10 +4,10 @@ function Sidebar() {
   return (
     <div>
       <div>
-        <Link to="/">Home Page</Link>
+        <Link to="/" className="sidebar-links">Home Page</Link>
       </div>
       <div>
-        <Link to="/about">About Page</Link>
+        <Link to="/about" className="sidebar-links">About Page</Link>
       </div>
     </div>
   );

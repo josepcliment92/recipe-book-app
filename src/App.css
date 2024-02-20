@@ -15,6 +15,10 @@
   padding-top: 15px;
 }
 
+.sidebar-links {
+  color: blue;
+}
+
 .home-page {
   background-color: rgb(163, 188, 113);
   width: 100vw;
@@ -96,6 +100,15 @@
   margin-left: 10px;
 }
 
+.back-bottom {
+  background-color: rgb(207, 155, 34);
+  color:rgb(243, 245, 242);
+  box-shadow: 0 0 3px rgb(4, 6, 7) ;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
 .edit-form{
   padding: 15px;
   background-color: rgb(230, 211, 137);
@@ -106,4 +119,16 @@
 
 .each-recipe{
   padding-top: 30px;
+}
+
+.footer {
+  background-color: #649033;
+  height: 60px;
+}
+
+.footer-link {
+  display: flex; 
+  color: blue;
+  justify-content: center; 
+  padding: 20px;
 }

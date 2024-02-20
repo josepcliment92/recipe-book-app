@@ -19,7 +19,7 @@ function ItemDetailsPage(props) {
 
       <p>Esta receta contiene ${recipeDetail.calories} calorías</p>
 
-      <Link to={"/"}><button>Vuelve a tus recetas</button></Link> 
+      <Link to={"/"} ><button className="btn-details">Vuelve a tus recetas</button></Link> 
     </div>
   );
 }
