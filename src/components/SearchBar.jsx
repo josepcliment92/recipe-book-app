@@ -25,10 +25,11 @@ function SearchBar(props) {
     <div className="search-bar">
       <form onSubmit={handleSubmit}>
         <input
+          className="label-search-bar"
           type="text"
           value={search}
           onChange={handleSearch}
-          placeholder="Busca aquí"
+          placeholder="🔎 Busca aquí"
         ></input>
         {/*<button type="submit">¡Encuentra tu receta!</button>*/}
       </form>
@@ -36,11 +37,10 @@ function SearchBar(props) {
         {filteredResult.map((eachRecipe) => {
           return (
             <Link to={`/item-details/${eachRecipe.name}`}>
-            <div className="recipe-suggestion">
-              <img src={eachRecipe.image} width="30px" />
-              <p>{eachRecipe.name}</p>
-              
-            </div>
+              <div className="recipe-suggestion">
+                <img src={eachRecipe.image} width="30px" />
+                <p>{eachRecipe.name}</p>
+              </div>
             </Link>
           );
         })}

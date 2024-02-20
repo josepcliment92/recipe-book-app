@@ -35,12 +35,13 @@ function UpdateForm(props) {
     <div className="edit-form">
       <form onSubmit={handleSubmit}>
         <div>
-          <span>Aquí puedes editar tu receta</span>
+          <span className="title-add-form">Aquí puedes editar tu receta</span>
           <div>
             <div>
               <label>
-                Nombre
+                Nombre:
                 <input
+                className="label-add-form"
                   name="name"
                   type="text"
                   value={name}
@@ -50,8 +51,9 @@ function UpdateForm(props) {
             </div>
             <div>
               <label>
-                Calorías
+                Calorías:
                 <input
+                className="label-add-form"
                   name="calories"
                   type="number"
                   value={calories}
@@ -60,8 +62,9 @@ function UpdateForm(props) {
               </label>
             </div>
             <label>
-              Raciones
+              Raciones:
               <input
+              className="label-add-form"
                 name="servings"
                 type="number"
                 value={servings}

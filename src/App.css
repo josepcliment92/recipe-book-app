@@ -181,3 +181,22 @@
   color: blue;
   align-items:flex-start;
 }
+
+.label-add-form {
+  border-radius: 5px;
+  background-color: #d5e9bd;
+  color: black;
+  margin-left: 5px;
+}
+
+.title-add-form{
+  color:black;
+  font-size: large;
+  text-decoration: underline;
+}
+
+.label-search-bar{
+  border-radius: 5px;
+  background-color: #e6e9e3;
+  color: black;
+}

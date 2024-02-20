@@ -40,29 +40,29 @@ function Form(props) {
     return (
     <div>
         <form onSubmit={handleSubmit}>
-            <span>Añade tu receta</span>
+            <span className="title-add-form">Tu nueva receta</span>
             <div>
                 <div>
-                <label>
-                    Nombre
-                    <input name="name" type="text" placeholder="Nombre" value={nameInput} onChange={handleNameInput}/>
+                <label >
+                    Nombre:
+                    <input className="label-add-form" name="name" type="text" placeholder="Nombre" value={nameInput} onChange={handleNameInput}/>
                 </label>
                 </div>
                 <div>
                 <label>
-                    Calorías
-                    <input name="calories" type="number" placeholder="0" value= {caloriesInput} onChange={handleCaloriesInput}/>
+                    Calorías:
+                    <input className="label-add-form" name="calories" type="number" placeholder="0" value= {caloriesInput} onChange={handleCaloriesInput}/>
                 </label>
                 </div>
                 <div>
                 <label>
-                    Imagen
-                    <input name="imagen" type="url" placeholder="Añade la url" value= {imageInput} onChange={handleImageInput}/>
+                    Imagen:
+                    <input className="label-add-form" name="imagen" type="url" placeholder="Añade la url" value= {imageInput} onChange={handleImageInput}/>
                 </label></div>
                 <div>
                 <label>
-                    Raciones
-                    <input name="servings" type="number" placeholder="0" value={servingsInput} onChange={handleServingsInput}/>
+                    Raciones:
+                    <input className="label-add-form" name="servings" type="number" placeholder="0" value={servingsInput} onChange={handleServingsInput}/>
                 </label></div>
                 <button className="btn-add-recipe" type="submit" >Añade tu receta</button>
                 
