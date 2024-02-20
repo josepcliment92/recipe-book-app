@@ -19,10 +19,10 @@ function AboutPage() {
         <div style={{marginRight: "20px"}}>
         <img src={imagen1} alt="imagen1" />
         </div>
-          <div style={{alignItems:""}}>
-        <a href="https://github.com/josepcliment92/">GitHub</a>
+          <div>
+        <a href="https://github.com/josepcliment92/" className="about-links">GitHub</a>
         <br />
-        <a href="https://www.linkedin.com/in/josep-climent-07508082/">
+        <a href="https://www.linkedin.com/in/josep-climent-07508082/" className="about-links">
           LinkedIn
         </a>
         </div>
@@ -33,9 +33,9 @@ function AboutPage() {
         <img src={imagen2} alt="imagen2" />
         </div>
         <div>
-        <a href="https://github.com/PabloSanchezCamara">GitHub</a>
+        <a href="https://github.com/PabloSanchezCamara" className="about-links">GitHub</a>
         <br />
-        <a href="https://www.linkedin.com/in/pablo-sanchez-camara-b143892b4/">
+        <a href="https://www.linkedin.com/in/pablo-sanchez-camara-b143892b4/" className="about-links">
           LinkedIn
         </a>
         </div>

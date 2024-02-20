@@ -172,6 +172,12 @@
 
 .about-profiles {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   margin-bottom: 20px;
+}
+
+.about-links {
+  color: blue;
+  align-items:flex-start;
 }
