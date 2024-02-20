@@ -22,7 +22,7 @@ function SearchBar(props) {
   };
 
   return (
-    <div>
+    <div className="search-bar">
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -36,7 +36,7 @@ function SearchBar(props) {
         {filteredResult.map((eachRecipe) => {
           return (
             <Link to={`/item-details/${eachRecipe.name}`}>
-            <div>
+            <div className="recipe-suggestion">
               <img src={eachRecipe.image} width="30px" />
               <p>{eachRecipe.name}</p>
               

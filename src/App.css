@@ -22,7 +22,6 @@
 .home-page {
   background-color: rgb(163, 188, 113);
   width: 100vw;
-  
 }
 
 .cuerpo-pagina {
@@ -131,4 +130,48 @@
   color: blue;
   justify-content: center; 
   padding: 20px;
+}
+
+.filtered-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0px 200px 10px 120px;
+  column-gap: 30px;
+  padding-top: 20px;
+  align-items: center;
+  width: 500px;
+  flex-wrap: wrap;
+  
+}
+
+.dashboard {
+  max-width: 700px;
+}
+
+.recipe-suggestion{
+  color: black;
+  border: 2px solid #649033;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 5px;
+  background-color: rgb(230, 211, 137);
+}
+
+.about-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid #649033;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 10px;
+  background-color: rgb(230, 211, 137);
+}
+
+.about-profiles {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }

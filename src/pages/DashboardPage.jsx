@@ -5,7 +5,7 @@ import SearchBar from "../components/SearchBar";
 
 function DashboardPage(props) {
   return (
-    <div>
+    <div className="dashboard">
       <div>
       <SearchBar currentListRecipe={props.currentListRecipe} setCurrentListRecipe={props.setCurrentListRecipe}/>
       </div>
